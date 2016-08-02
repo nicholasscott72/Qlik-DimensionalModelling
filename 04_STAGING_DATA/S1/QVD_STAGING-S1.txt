@@ -1,0 +1,10 @@
+//QVD_STAGING
+//S1
+//QVD FILE NAMING
+//SOURCE(5x)_TABLENAME(x)
+//eg. REV01_ROOMSBOOKINGHISTORY
+//SOURCE TO IDENTIFY PROJECT OR DATABASE
+//
+//Server.Database.Schema.Object
+//or
+//myserver01.Adventureworks.Accounting.Beans

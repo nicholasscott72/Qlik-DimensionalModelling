@@ -1,0 +1,10 @@
+//QVD_STAGING
+//S2 
+//REPRESENTS TRANSFORMED "BUSINESS" DATA
+//QVD FILE NAMING
+//BUSINESS_NAME(x)_VERSION(x)
+//eg. ROOMSBOOKINGS
+//
+//Server.Database.Schema.Object
+//or
+//myserver01.Adventureworks.Accounting.Beans

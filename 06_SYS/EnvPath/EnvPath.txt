@@ -1,0 +1,4 @@
+SET vDataSource = '..\..\DATA_SOURCE';
+SET vS1 = '..\..\QVD_STAGING\S1';
+SET vS2 = '..\..\QVD_STAGING\S2';
+SET vS2 = '..\..\QVD_STAGING\S3';
