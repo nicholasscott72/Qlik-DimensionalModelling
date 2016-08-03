@@ -4,7 +4,7 @@ Illustration of a 3-tier application architecture and a dimensional data model i
 # QlikView Practitioners Guide
 The project is linked with the QlikView Practitioners Guide which sets out a development methodology which details a technical methodology as well as the principal elements of contract and project management.
 
-#2 1. Technical Develompent
+#2 1. Technical Development
 QlikView is a powerful and flexible business intelligence tool.  To maximise the benefits a structured approach requires to be followed; this facilitates collaboration by creating a common methodology.  
 
 #2 2. Project Management
