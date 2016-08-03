@@ -1,7 +1,7 @@
 # Qlik-DimensionalModelling
-This project exists to promote the use of a simple development methodology for QlikView applications for `business analysts`, by leveraging commonly understood development concepts.
+This project promotes the use of a simple development methodology for QlikView applications. By leveraging commonly understood development concepts a `development framework` can be created which will deliver a robust and scalable `data warehouse` suitable for business analysis.  
 
-As a broad proposition the project adopts a 3-tier application architecture (**E**xtract, **T**ransform **L**oad) and a dimensional data model [Kimball methodology (http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/)] in QlikView.  
+As a broad proposition the project adopts a 3-tier application architecture (**E**xtract, **T**ransform and **L**oad) and a dimensional data model [Kimball methodology (http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/)] in QlikView.  
 
 [Rob Wunderlich (https://github.com/RobWunderlich/Qlikview-Components)] sets out another more `programatical` approach which may suit `programmers` rather than `business analysts`. This can also be seen in the @Qlik `QlikView Development Framework`. 
 
