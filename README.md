@@ -1,5 +1,11 @@
 # Qlik-DimensionalModelling
-Illustration of a 3-tier application architecture and a dimensional data model in QlikView.  The project is linked with the `QlikView Practitioners Guide` project. 
+This project exists to promote the use of a simple development methodology for QlikView applications for `business analysts`, by leveraging commonly understood development concepts.
+
+As a broad proposition the project adopts a 3-tier application architecture (**E**xtract, **T**ransform **L**oad) and a dimensional data model [Kimball methodology (http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/)] in QlikView.  
+
+[Rob Wunderlich (https://github.com/RobWunderlich/Qlikview-Components)] sets out another more `programatical` approach which may suit `programmers` rather than `business analysts`. This can also be seen in the @Qlik `QlikView Development Framework`. 
+
+The project is linked with the `QlikView Practitioners Guide` project. 
 
 # QlikView Practitioners Guide
 The `QlikView Practitioners Guide` is a project to document a common QlikView development methodology as well as the core elements of project and contract management.  The `QlikView Practitioners Guide` will include templates for many element of the technical, project and contract management requirements.
