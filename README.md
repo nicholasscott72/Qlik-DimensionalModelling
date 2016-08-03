@@ -4,10 +4,17 @@ A framework for creating a robust and scalable `data warehouse` in Qlik.
 
 ##Mission
 
-Qlik-DimensionalModelling is a library of QVW application templates, script files (subroutines) and text / data files. The mission of Qlik-DimensionalModelling is:
+To provide a library of QVW application templates, script files (subroutines) and text / data files to:
 
+> create a simple and effective framework for `business analysis` in Qlik (View \ Sense) by utilizing a standard methodology. 
 
->To create a simple and effective framework for `business analysis` in Qlik (View \ Sense) by utilizing a standard methodology. 
+The library encompasses:
+- Standard QlikView Environment (folders)
+- Application Architecture (3-tier)
+- Data architecture (dimensional modelling)
+- Variables repository (Excel file)
+- Calendars (Annual & Retail)
+- Common Set Analysis examples (YTD, MTD, TY/LY)
 
 ##Getting Started
 
