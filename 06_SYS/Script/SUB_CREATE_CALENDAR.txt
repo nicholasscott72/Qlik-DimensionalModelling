@@ -1,0 +1,64 @@
+SUB Create_Calendar(vCalendarField)
+//
+// Build Common Calendar
+//
+
+//Calendar Table and Calendar Field Naming Convention
+//Calendar Table = '<DateField>_DATE' e.g "Invoice DATE", so Subroutine Parameter must be '<DateField>_DATE'
+//Calendar Field = '<DateField>' e.g. Prefix to Month will be "Invoice Month"
+
+Let vCalendarTable = Upper('$(vCalendarField)');
+
+IF upper('$(vCalendarField)') = 'DATE' THEN
+	Let vPrefix = '';  
+ELSE
+	Let vPrefix = replace(Capitalize(replace('$(vCalendarField)','_',' ')),' Date','')&CHR(32);
+END IF
+
+Calendar_tmp1:
+Load
+	Date#(FieldValue('LINK_$(vCalendarTable)',RecNo()),'DD/MM/YYYY') as %Date
+	AutoGenerate FieldValueCount('LINK_$(vCalendarTable)')	;
+
+Calendar_tmp2:
+LOAD
+	     Min(%Date) as MinDate,
+	     Max(%Date) as MaxDate
+Resident Calendar_tmp1
+Order by %Date;
+	
+	
+DROP TABLE Calendar_tmp1;
+	
+	LET vMaxDate = peek('MaxDate');
+	LET vMinDate = peek('MinDate');
+	LET vRowsToCreate = num('$(vMaxDate)'-'$(vMinDate)')+1;
+
+DROP TABLE Calendar_tmp2;
+
+     $(vCalendarTable):
+     LOAD
+	     CalDate as LINK_$(vCalendarTable),
+	     num(CalDate) as [$(vPrefix)DateNum],
+	     date(CalDate) as [$(vPrefix)Date],
+	     Month(CalDate) as [$(vPrefix)Month],
+	     Year(CalDate) as [$(vPrefix)Year]
+	;
+	LOAD
+	     $(vMinDate)+recno()-1 as CalDate
+	AUTOGENERATE ($(vRowsToCreate));
+
+/*
+Concatenate ('$(vCalendarTable)')
+LOAD
+-1 as LINK_$(vCalendarTable),
+-1 as [$(vPrefix)DateNum],
+'Missing' as [$(vPrefix)Date],
+'Missing' as [$(vPrefix)Month]
+'Missing' as [$(vPrefix)Year],
+
+
+AutoGenerate (1)
+*/
+
+END SUB
